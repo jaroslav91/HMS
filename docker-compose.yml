@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  CompanyName.HousingManagementSystem.api:
+    image: ${DOCKER_REGISTRY-}CompanyNameHousingManagementSystem
+    build:
+      context: .
+      dockerfile: CompanyName.HousingManagementSystem.Api/Dockerfile
